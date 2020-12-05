@@ -3,7 +3,11 @@ import {useEffect} from 'react'
 
 export default function Home(){
     useEffect(() =>{
+<<<<<<< HEAD
+        window.location.replace('https://oauth.vk.com/authorize?client_id=7689075&display=page&redirect_uri=https://localhost:3000/auth&scope=audio&response_type=token&v=5.52')  
+=======
         window.location.replace('https://oauth.vk.com/authorize?client_id=7689075&display=page&redirect_uri=https://localhost:3000/auth&scope=audio&response_type=token&v=5.52')
+>>>>>>> 6873fcf4dfdc9d67bf212052a1a745cf75ef4fa4
       }, [])
 
     return(
