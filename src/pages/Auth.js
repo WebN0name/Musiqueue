@@ -1,34 +1,20 @@
 import React, {useEffect, useState} from 'react'
-
+import {useHistory} from 'react-router-dom'
 
 
 export default function Auth(props){
 
 
-    const[token,setToken] = useState({})
 
     useEffect(() =>{
 
         console.log(props.location.hash)
         const token = get_hash_data(props.location.hash)
-        setToken(token)
-        // const hash = props.location.hash
         console.log(token)
     },[])
-    // const search = props.location.search;
-    // const token = new URLSearchParams(search).get('access_token');
 
     return(
         <>
-            <h1>хуй</h1>
-            <h2>Пизда</h2>
-            <p>--{token.access_token}--</p>
-            {/*{ token.map((member) => <p>{member}</p>) }*/}
-            {Object.keys(token).map((keyName, i) => (
-                <li  key={i}>
-                    <span>key: {i} Name: {token[keyName]}</span>
-                </li>
-            ))}
         </>
     )
 }
